@@ -11,16 +11,28 @@ body {margin: 0}
     overflow: hidden;
     display: flex;
     white-space: nowrap;
+    position: fixed;
+    top: 30%;
+    width: 100%;
+    z-index: 2000;
 }
 
+#scroll2 {
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    z-index: 2000;
+}
+
+
 .text {
-    font-family:"Montsserat", sans-serif ;
-    font-style: italic;
-    font-size: 90px;
-    font-weight: 900;
+    font-family:"EB Garamond", serif ;
+    font-style: normal;
+    font-size: 7rem;
+    font-weight: 600;
     text-transform: lowercase;
     color: #0FFF95;
-    animation: animate_text 40s linear infinite;
+    animation: animate_text 60s linear infinite;
 }
 
 .text span {
@@ -38,18 +50,21 @@ body {margin: 0}
 
 #picture_of_me {
     mix-blend-mode: luminosity;
+    width: 40%;
 }
 
 .navbar {
-    background-color: #0FFF95;
     font-weight: 800;
-    font-size: 45px;
-    color: #A09D92;    
-    position: sticky
+    font-size: 3.5rem;
+    color: #0FFF95; 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2000; 
 }
 
 .menu_drop {
-    color: #A09D92;
+    color: #0FFF95;
     text-decoration: none;
     cursor: pointer;
     padding: 9px
@@ -67,13 +82,12 @@ body {margin: 0}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #0FFF95;
     min-width: 160px;
     z-index: 1;
 }
 
 .dropdown-content a {
-    color:#A09D92;
+    color:#0FFF95;
     text-decoration: none;
     display: block;
     padding: 8px
@@ -83,17 +97,23 @@ body {margin: 0}
     font-style: italic;
 }
 
-.show {display:block;}
+.show {
+    display:block;
+}
 
 .introduction {
     font-weight: 700;
-    padding: 8px;
+    padding-right: 8px;
+    text-align: right;
 }
 
 .introduction h2 {
-    font-size: 60px;
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+#separator {
+    margin-bottom: 6%;
+}
