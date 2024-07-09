@@ -5,6 +5,7 @@
 html {
     color:#2D2A32;
     background-color:#CCC2C2;
+    scroll-behavior: smooth;
 }
 
 body {margin: 0}
