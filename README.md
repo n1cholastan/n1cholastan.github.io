@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/n1cholastan/portfolio.git
+   git clone https://github.com/n1cholastan/n1cholastan.github.io.git
    
 2. Open the `index.html` in your broswer
 
