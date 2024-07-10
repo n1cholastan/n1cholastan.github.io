@@ -10,29 +10,31 @@
     <link href="styles/output.css" rel="stylesheet">
     <script src="scripts/main.js" defer></script>
 </head>
-<body class="mx-8 max-w-screen lg:mx-0">
+<body class="max-w-screen lg:mx-0">
 
     <div class="grid grid-cols-1 lg:grid-cols-3 h-full">
-        <nav class="col-span-1 sticky top-0 lg:h-screen p-4 flex flex-row justify-center pr-5 bg-transparent">
-            <div class="z-30 flex flex-row lg:flex-col justify-center gap-8 lg:gap-4 shadow-md lg:shadow-none bg-background border lg:border-none border-black bg-opacity-90 lg:bg-opacity-100 rounded-full px-5 py-2 lg:p-0 lg:rounded-none lg:bg-transparent">
+        <nav class="col-span-1 w-full fixed lg:sticky bottom-5 lg:bottom-auto lg:top-0 lg:h-screen p-4 flex flex-row justify-center pr-5 bg-transparent">
+            <div class="z-50 flex flex-row lg:flex-col justify-center gap-8 lg:gap-4 shadow-md lg:shadow-none bg-background border lg:border-none border-black bg-opacity-90 lg:bg-opacity-100 rounded-full px-5 py-2 lg:p-0 lg:rounded-none lg:bg-transparent">
                 <a href="#home" class="nav-link text-xs sm:text-sm md:text-base lg:text-3xl xl:text-4xl font-bold font-inter text-highlight underline transition-colors duration-300 italic hover:text-highlight">Nicholas Tan</a>
                 <a href="#projects" class="nav-link text-xs sm:text-sm md:text-base lg:text-3xl xl:text-4xl font-bold font-inter text-black transition-colors duration-300 hover:text-highlight">Projects</a>
                 <a href="#contact" class="nav-link text-xs sm:text-sm md:text-base lg:text-3xl xl:text-4xl font-bold font-inter text-black transition-colors duration-300 hover:text-highlight">Contact</a>
                 <a href="#cv" class="nav-link text-xs sm:text-sm md:text-base lg:text-3xl xl:text-4xl font-bold font-inter text-black transition-colors duration-300 hover:text-highlight">CV</a>
             </div>
         </nav>
-        <main class="col-span-1 lg:col-span-2 lg:mr-16 xl:mr-20 flex flex-col">
+        <main class="mx-8 col-span-1 lg:col-span-2 lg:mr-16 xl:mr-20 flex flex-col">
             <section id="home" class="h-screen flex">
                 <div class="self-center">
-                    <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-2">Hello, my name is</h1>
-                    <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 underline italic">Nicholas Tan</h1>
+                    <h1 class="text-black font-bold font-inter text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl pb-0 md:pb-2">Hello, my name is</h1>
+                    <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-5 md:pb-10 underline italic">Nicholas Tan</h1>
                     <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">I am a second year Computer Science and Psychology student at the University of Auckland</p>
-                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter">I would like to gain experience in front-end development or machine learning as these are my main areas of interest.</p>
+                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">This portfolio contains <a href="#projects" class="underline hover:text-highlight">information on projects</a> I have created and links to their respositories and websites. Also on this website is my <a href="#contact" class="underline hover:text-highlight">contact information</a><a href="#contact" class="underline hover:text-highlight"></a> and a link to download my <a href="#cv" class="underline hover:text-highlight">CV</a>.</p>
+                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter">In terms of the tech industry, I am primarily interested in front-end development and machine learning. Outside of tech, I am an avid music and literature fanatic.
                 </div>
             </section>
             <section id="projects" class="min-h-screen flex">
                 <div class="self-center flex flex-col">
                     <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 underline">Projects</h1>
+                    <p class="text-black font-bold font-inter text-xs lg:text-lg pb-2">Click to expand</p>
                     <div class="project">
                         <div class="flex project-header">
                             <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">Topsterify Spotify API</h2>
@@ -40,25 +42,25 @@
                             <h2 class="chevron-up hidden cursor-pointer text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">:</h2>
                         </div>
                         <div class="project-description hidden mt-1 pb-5">
-                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pb-3">Images:</h3>
-                            <div class="image-carousel relative flex items-center justify-center w-full md:w-2/3 lg:w-1/2 h-96 bg-black mb-3">
+                            <div class="image-carousel relative flex items-center justify-center w-full md:w-2/3 lg:w-1/2 h-96 bg-black">
                                 <img src="files/topsterify/topsterify artists mobile.png" alt="Topsterify artists mobile view" class="carousel-image object-contain w-full h-full">
                                 <img src="files/topsterify/Topsterify Demo.gif" alt="Topsterify Demo" class="carousel-image object-contain w-full h-full">
                                 <img src="files/topsterify/Topsterify Responsive.gif" alt="Topsterify is Responsive" class="carousel-image object-contain w-full h-full">
+                                <img src="files/topsterify/Topsterify Responsive Artists and Tracks.gif" alt="Topsterify Responsive Artists and Tracks" class="carousel-image object-contain w-full h-full">
                                 <img src="files/topsterify/topsterify tracks medium.png" alt="Topsterify tracks medium view" class="carousel-image object-contain w-full h-full">
                                 <button class="prev absolute top-1/2 -left-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&lt;</button>
                                 <button class="next absolute top-1/2 -right-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&gt;</button>
                             </div>
-                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
-                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A React webapp called Topsterify that utilises the Spotify API to show a user's top artists and tracks in a visual format. Users are given the choice to look at their top data from 3 distinct periods: last 4 weeks, 6 months and 12 months. The webapp is also responsive with dedicated views for different screen sizes. I worked on this project alone as music is one of my main interests and I plan on updating it with new functionality in the future.</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">About:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A React webapp that utilises the Spotify API to show a user's top artists and tracks in a visual format. Users are given the choice to look at their top data from 3 distinct periods: last 4 weeks, 6 months and 12 months. The webapp is also responsive with dedicated views for different screen sizes. I worked on this project alone as music is one of my main interests and I plan on updating it with new functionality in the future.</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">React, JavaScript, TailwindCSS, Figma</p>
-                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Completed:</h3>
-                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">In Progress..</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Status:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">Fixing bugs...</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Github:</h3>
-                            <a href="https://github.com/n1cholastan/topsterify-spotify-webapp" class="text-black font-medium font-inter text-base lg:text-lg pb-3 underline hover:text-highlight">topsterify-spotify-webapp</a>
+                            <a href="https://github.com/n1cholastan/topsterify-spotify-webapp"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">topsterify-spotify-webapp</p></a>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Project Website:</h3>
-                            <a href="#" class="text-black font-medium font-inter text-base lg:text-lg pb-5 underline hover:text-highlight">coming soon</a>
+                            <a href="#"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">Currently Unavailable</p></a>
                         </div>
                     </div>
                     <div class="project">
@@ -69,15 +71,15 @@
                         </div>
                         <div class="project-description hidden mt-1 pb-5">
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
-                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A website created for the University of Auckland Dessert Society. Worked in a team of 10 people as part of WDCC UoA. I contributed to the initial Figma design, the home page, and the sponsors page.</p>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A website created for the University of Auckland Dessert Society. Information about the club and its sponsors and events are displayed on the website, along with a signup form. I worked in a team of 10 people as part of WDCC UoA which involved having weekly development sessions as a team and standup meetings. I contributed to the initial Figma design, the home page, and the sponsors page.</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">React, TypeScript, TailwindCSS, Figma</p>
-                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Completed:</h3>
-                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">In Progress..</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Status:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">In Progress...</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Github:</h3>
-                            <a href="https://github.com/UoaWDCC/uads-member-app-v2" class="text-black font-medium font-inter text-base lg:text-lg pb-3 underline hover:text-highlight">uads-member-app</a>
+                            <a href="https://github.com/UoaWDCC/uads-member-app-v2"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">uads-member-app</p></a>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Project Website:</h3>
-                            <a href="https://wdcc-uads-member-app-v2-staging.fly.dev" class="text-black font-medium font-inter text-base lg:text-lg pb-3 underline hover:text-highlight">note: unfinished</a>
+                            <a href="https://wdcc-uads-member-app-v2-staging.fly.dev"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">Please note: unfinished</p></a>
                         </div>
                     </div>
                 </div>
