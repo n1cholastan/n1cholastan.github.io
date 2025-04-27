@@ -26,20 +26,85 @@
                 <div class="self-center">
                     <h1 class="text-black font-bold font-inter text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl pb-0 md:pb-2">Hello, my name is</h1>
                     <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-5 md:pb-10 underline italic">Nicholas Tan</h1>
-                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">I am a second year Computer Science and Psychology student at the University of Auckland</p>
-                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">This portfolio contains <a href="#projects" class="underline hover:text-highlight">information on projects</a> I have created and links to their respositories and websites. Also on this website is my <a href="#contact" class="underline hover:text-highlight">contact information</a><a href="#contact" class="underline hover:text-highlight"></a> and a link to download my <a href="#cv" class="underline hover:text-highlight">CV</a>.</p>
+                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">I am a third year Computer Science and Psychology student at the University of Auckland</p>
+                    <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter pb-5">This portfolio contains <a href="#projects" class="underline hover:text-highlight transition-colors duration-300">information on projects</a> I have created and links to their respositories and websites. Also on this website is my <a href="#contact" class="underline hover:text-highlight transition-colors duration-300">contact information</a><a href="#contact" class="underline hover:text-highlight transition-colors duration-300"></a> and a link to download my <a href="#cv" class="underline hover:text-highlight transition-colors duration-300">CV</a>.</p>
                     <p class="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl text-black font-bold font-inter">In terms of the tech industry, I am primarily interested in front-end development and machine learning. Outside of tech, I am an avid music and literature fanatic.
                 </div>
             </section>
+
             <section id="projects" class="min-h-screen flex">
                 <div class="self-center flex flex-col">
                     <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 underline">Projects</h1>
                     <p class="text-black font-bold font-inter text-xs lg:text-lg pb-2">Click to expand</p>
+
                     <div class="project">
                         <div class="flex project-header">
-                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">Topsterify Spotify API</h2>
-                            <h2 class="chevron-down cursor-pointer text-highlight font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">...</h2>
-                            <h2 class="chevron-up hidden cursor-pointer text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">:</h2>
+                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">UoA Dessert Society 2025 Landing</h2>
+                        </div>
+                        <div class="project-description hidden mt-1 pb-5">
+                            <div class="image-carousel relative flex items-center justify-center w-full md:w-2/3 lg:w-1/2 h-96 bg-black">
+                                <img src="files/uads-2025-linktree/landing.jpg" alt="UADS Landing" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-linktree/mobile.jpg" alt="UADS Landing" class="carousel-image object-contain w-full h-full">
+                                <button class="prev absolute top-1/2 -left-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&lt;</button>
+                                <button class="next absolute top-1/2 -right-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&gt;</button>
+                            </div>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">Date:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">April 2025</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A companion to the UADS 2025 website. A simple linktree clone for the University of Auckland Dessert Society that follows the styling of the official website. This will be utilised in place of the existing linktree to give us finer control over design.
+                                <br /> This utilises the backend from uads-2025-app.
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">React, TypeScript, TailwindCSS, Figma</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Status:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">Complete and Deployed</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Github:</h3>
+                            <a href="https://github.com/n1cholastan/uads-2025-linktree"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">uads-2025-linktree</p></a>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Project Website:</h3>
+                            <a href="https://go.uads.co.nz"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">go.uads.co.nz</p></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="flex project-header">
+                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">UoA Dessert Society Website 2025</h2>
+                        </div>
+                        <div class="project-description hidden mt-1 pb-5">
+                            <div class="image-carousel relative flex items-center justify-center w-full md:w-2/3 lg:w-1/2 h-96 bg-black">
+                                <img src="files/uads-2025-app/home page.jpg" alt="UADS home page" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/About page.jpg" alt="UADS about page" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/sponsors grid.jpg" alt="UADS sponsor page grid in small viewport" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/Sponsor cards.jpg" alt="UADS sponsor cards" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/Exec array.jpg" alt="UADS exec array" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/event cards.jpg" alt="UADS event page event cards" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/unique event pages.jpg" alt="UADS unique event pages" class="carousel-image object-contain w-full h-full">
+                                <img src="files/uads-2025-app/unique event page 2.jpg" alt="UADS unique event page for upcoming event" class="carousel-image object-contain w-full h-full">
+                                <button class="prev absolute top-1/2 -left-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&lt;</button>
+                                <button class="next absolute top-1/2 -right-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&gt;</button>
+                            </div>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">Date:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">April 2025</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A website created for the 2025 University of Auckland Dessert Society. This website displays information about the club itself, upcoming and past events and sponsors. The project utilizes the Notion database to keep an up to date record of sponsors and events. 
+                                <br />After working on the UADS 2024 website in a small development team last year, I decided to use the skills I learnt and redesign and rebuild the website for 2025. As the Co-President of the club, I designed and worked on this project alone and it took about a week to complete. 
+                                <br/>The sponsor page contains a grid of our sponsors, of which all images link to the sponsor's website. The sponsor cards all contain information about the deals some of our sponsors are offering. There is also a search function to find the sponsor faster.
+                                <br />The event page contains a list of our events, sorted by upcoming events closest in date to furthest in date, followed by past events closest in date to furthest in date. Upcoming event cards have a red background, which differentiates them from past events which are shown with a red border.
+                                <br />There are unique event pages which contain the full description of the events and an embedded sign up form if the event has not occured yet. These follow similar patterns where past events have a red outline while upcoming events have a red background. They also contain links to the instagram post.
+                                <br />The about page just displays information about the club and contains a grid of all the execs, which is taken from the notion CMS.
+                                <br />Note: I utilised AI to assist with backend development as I did not manage to learn last year.</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">React, TypeScript, TailwindCSS, Figma, NotionCMS, Express</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Status:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">Complete and Deployed</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Github:</h3>
+                            <a href="https://github.com/n1cholastan/uads-2025-app"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">uads-2025-app</p></a>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">Project Website:</h3>
+                            <a href="https://uads.co.nz"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">uads.co.nz</p></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="flex project-header">
+                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">Topsterify Spotify API</h2>
                         </div>
                         <div class="project-description hidden mt-1 pb-5">
                             <div class="image-carousel relative flex items-center justify-center w-full md:w-2/3 lg:w-1/2 h-96 bg-black">
@@ -54,7 +119,9 @@
                                 <button class="prev absolute top-1/2 -left-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&lt;</button>
                                 <button class="next absolute top-1/2 -right-3 transform -translate-y-1/2 bg-background text-black border border-black opacity-50 shadow-xl transition-opacity hover:opacity-100 duration-300 p-2 font-bold font-inter rounded-full">&gt;</button>
                             </div>
-                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">About:</h3>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">Date:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">July 2024</p>
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A React webapp that utilizes the Spotify API to show a user's top artists and tracks in a visual format. Users are given the choice to look at their top data from 3 distinct periods: last 4 weeks, 6 months and 12 months. The webapp is also responsive with dedicated views for different screen sizes. I worked on this project alone as music is one of my main interests and I plan on updating it with new functionality in the future.</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">React, JavaScript, TailwindCSS, Figma</p>
@@ -63,17 +130,18 @@
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Github:</h3>
                             <a href="https://github.com/n1cholastan/topsterify-spotify-webapp"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">topsterify-spotify-webapp</p></a>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Project Website:</h3>
-                            <a href="https://topsterify.netlify.app/"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">Topsterify</p></a>
+                            <a href="https://topsterify.netlify.app/"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">topsterify.netlify.app/</p></a>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">Note: Currently, I have to pre-assign Spotify accounts that can access the API as the website has not been placed into extended quota mode by Spotify yet. So despite being deployed, the website is unfortunately only fully functional for people I have given authentication access to.</p>
                         </div>
                     </div>
+
                     <div class="project">
                         <div class="flex project-header">
-                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">UoA Dessert Society Website</h2>
-                            <h2 class="chevron-down cursor-pointer text-highlight font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">...</h2>
-                            <h2 class="chevron-up hidden cursor-pointer text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">:</h2>
+                            <h2 class="cursor-pointer text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">UoA Dessert Society Website 2024</h2>
                         </div>
                         <div class="project-description hidden mt-1 pb-5">
+                            <h3 class="text-black font-bold font-inter text-base lg:text-lg pt-5">Date:</h3>
+                            <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">March to November 2024</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">About:</h3>
                             <p class="text-black font-medium font-inter text-base lg:text-lg pb-3">A website created for the University of Auckland Dessert Society. Information about the club and its sponsors and events are displayed on the website, along with a signup form. I worked in a team of 10 people doing Agile as part of WDCC UoA which involved having weekly development sessions as a team and standup meetings. I contributed to the initial Figma design, the home page, and the sponsors page.</p>
                             <h3 class="text-black font-bold font-inter text-base lg:text-lg">Tools and Languages:</h3>
@@ -86,21 +154,22 @@
                             <a href="https://wdcc-uads-member-app-v2-staging.fly.dev"><p class="text-black font-medium font-inter text-base lg:text-lg underline hover:text-highlight pb-3">Please note: unfinished</p></a>
                         </div>
                     </div>
+
                 </div>
             </section>
             <section id="contact" class="h-screen flex">
                 <div class="self-center flex flex-col">
                     <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 underline">Contact</h1>
-                    <a href="mailto:nicholastan70399@gmail.com" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">Email: nicholastan70399@gmail.com</a>
-                    <a href="https://github.com/n1cholastan" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">Github: n1cholastan</a>
-                    <a href="https://www.linkedin.com/in/n1cholastan/" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5">Linkedin: Nicholas Tan</a>
+                    <a href="mailto:nicholastan70399@gmail.com" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">Email: nicholastan70399@gmail.com</a>
+                    <a href="https://github.com/n1cholastan" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">Github: n1cholastan</a>
+                    <a href="https://www.linkedin.com/in/n1cholastan/" target="_blank" class="text-black underline font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 hover:text-highlight transition-colors duration-300">Linkedin: Nicholas Tan</a>
                 </div>
             </section>
             <section id="cv" class="h-screen flex">
                 <div class="self-center">
                     <a href="files/Nicholas Tan Aug 2024 CV.pdf" download="Nicholas Tan CV">
                         <h1 class="text-highlight font-bold font-inter text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 underline">CV</h1>
-                        <p class="text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 underline">Download my CV</p>
+                        <p class="text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-5 underline hover:text-highlight transition-colors duration-300">Download my CV</p>
                     </a>
                     <p class="text-black font-bold font-inter text-xl md:text-3xl lg:text-4xl pb-2">(Last Updated August 2024)</p>
                 </div>
